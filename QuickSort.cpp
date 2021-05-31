@@ -12,7 +12,7 @@ int partition(int A[], int start, int end) {
     int piv = A[end];
     int c;
     for(c=start; c<end; c++) {
-        if(A[c] < piv) {
+        if(A[c] < piv) {                           // Quick Sort
             swap(&A[c], &A[i]);
             i++;
         }
